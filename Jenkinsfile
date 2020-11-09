@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build Application') {
+        stage('Build Application-for webhook') {
             steps {
                 sh 'mvn -f pom.xml clean package'
             }
